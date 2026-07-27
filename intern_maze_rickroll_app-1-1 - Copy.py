@@ -83,21 +83,20 @@ st.markdown("""
 .kicker { letter-spacing:.18em; font-size:.75rem; opacity:.75; font-weight:700; }
 .panel {
     background:#2b2d31;
-    color:white;
     border:1px solid #42464d;
     border-radius:14px;
     padding:18px;
     box-shadow:0 5px 14px rgba(0,0,0,.25);
 }
 ..metric-label {
-    color:#b8c1cc;
+    color:##607286;
     font-size:.75rem;
     text-transform:uppercase;
     letter-spacing:.08em;
 }
 
 .metric-value {
-    color:#ffffff;
+    color:#102f4c;
     font-size:1.5rem;
     font-weight:800;
 }
