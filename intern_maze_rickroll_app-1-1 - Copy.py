@@ -109,7 +109,11 @@ st.markdown("""
 .alert {background:#e6e6e6; /* optional gray background */ border-left:5px solid #000000; color:#000000; }
 </style>
 """, unsafe_allow_html=True)
-
+.stButton > button {
+    background-color:0b2742 !important;
+    color:white !important;
+    border:1px solid 174f78 !important;
+}
 st.markdown("""
 <div class="hero">
 <div class="kicker">BENCHMARK INTERNAL TRAINING PORTAL</div>
