@@ -131,7 +131,7 @@ padding:15px;
 border-radius:12px;
 margin-bottom:10px;
 ">
-<h3 style="color:white;margin:0;">
+<h3 style="color:#e8edf2;margin:0;">
 Qualification Status
 </h3>
 </div>
