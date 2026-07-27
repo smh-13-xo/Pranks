@@ -126,7 +126,7 @@ with right:
     st.markdown('<div class="panel">', unsafe_allow_html=True)
     st.markdown("""
 <div style="
-background:#2b2d31;
+background:#174f78;
 padding:15px;
 border-radius:12px;
 margin-bottom:10px;
