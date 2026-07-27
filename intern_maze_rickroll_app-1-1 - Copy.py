@@ -107,13 +107,10 @@ st.markdown("""
 .goal { color:#66e3a4; text-shadow:0 0 8px #66e3a4; }
 .critter { color:#f8b4d9; }
 .alert {background:#e6e6e6; /* optional gray background */ border-left:5px solid #000000; color:#000000; }
+.stButton > button {
+background-color:#0b2742 !important; color:white !important; border:1px solid #174f78 !important;}
 </style>
 """, unsafe_allow_html=True)
-.stButton > button {
-    background-color:0b2742 !important;
-    color:white !important;
-    border:1px solid 174f78 !important;
-}
 st.markdown("""
 <div class="hero">
 <div class="kicker">BENCHMARK INTERNAL TRAINING PORTAL</div>
