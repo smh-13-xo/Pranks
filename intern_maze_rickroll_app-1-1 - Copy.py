@@ -74,7 +74,7 @@ if "maze" not in st.session_state:
 maze = st.session_state.maze
 player = st.session_state.player
 goal = st.session_state.goal
-
+#style block#
 st.markdown("""
 <style>
 .stApp { background: #eef3f8; }
@@ -97,6 +97,10 @@ st.markdown("""
     color:lime !important;
     font-size:1.5rem;
     font-weight:800;
+}
+[data-testid="stMarkdownContainer"] {
+color:#102f4c !important;
+26
 }
 .maze { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; line-height:1; font-size:20px; background:#081a2b; border:7px solid #173f5f; border-radius:12px; padding:14px; overflow:auto; text-align:center; }
 .wall { color:#4f7598; }
