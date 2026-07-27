@@ -81,7 +81,7 @@ st.markdown("""
 .block-container { max-width: 1450px; padding-top: 1rem; }
 .hero { background: linear-gradient(135deg,#0b2742,#174f78); color:white; padding:20px 26px; border-radius:14px; box-shadow:0 8px 22px rgba(0,0,0,.15); }
 .kicker { letter-spacing:.18em; font-size:.75rem; opacity:.75; font-weight:700; }
-.panel { background:white; border:1px solid #d6e0e8; border-radius:14px; padding:18px; box-shadow:0 5px 14px rgba(25,55,80,.08); }
+.panel { background:black; border:1px solid #d6e0e8; border-radius:14px; padding:18px; box-shadow:0 5px 14px rgba(25,55,80,.08); }
 .metric-label { color:#607286; font-size:.75rem; text-transform:uppercase; letter-spacing:.08em; }
 .metric-value { color:#102f4c; font-size:1.5rem; font-weight:800; }
 .maze { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; line-height:1; font-size:20px; background:#081a2b; border:7px solid #173f5f; border-radius:12px; padding:14px; overflow:auto; text-align:center; }
@@ -95,6 +95,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown("""
+
 <div class="hero">
 <div class="kicker">BENCHMARK INTERNAL TRAINING PORTAL</div>
 <h1 style="margin:.2rem 0">Manufacturing Process Navigation Assessment</h1>
