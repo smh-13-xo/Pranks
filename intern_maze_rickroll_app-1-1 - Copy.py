@@ -88,7 +88,7 @@ st.markdown("""
     padding:18px;
 }
 .metric-label {
-    color:red !important;
+    color:blue !important;
     font-size:.75rem;
     text-transform:uppercase;
     letter-spacing:.08em;
@@ -98,10 +98,8 @@ st.markdown("""
     font-size:1.5rem;
     font-weight:800;
 }
-[data-testid="stMarkdownContainer"] {
-color:#102f4c !important;
-26
-}
+[data-testid="stMarkdownContainer"] {color:#102f4c !important;}
+[data-testid="stCaptionContainer"] {color:#102f4c !important;}
 .maze { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; line-height:1; font-size:20px; background:#081a2b; border:7px solid #173f5f; border-radius:12px; padding:14px; overflow:auto; text-align:center; }
 .wall { color:#4f7598; }
 .path { color:#10263a; }
