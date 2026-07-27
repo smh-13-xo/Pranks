@@ -108,7 +108,8 @@ st.markdown("""
 .critter { color:#f8b4d9; }
 .alert {background:#e6e6e6; /* optional gray background */ border-left:5px solid #000000; color:#000000; }
 .stButton > button {
-background-color:#0b2742 !important; color:white !important; border:1px solid #174f78 !important;}
+background-color: #6b7280 !important; color:white !important; border:1px solid #4b5563 !important;}
+.stButton > button:hover { background-color:#7c8493 !important;border-color:#6b7280 !important;}
 </style>
 """, unsafe_allow_html=True)
 st.markdown("""
