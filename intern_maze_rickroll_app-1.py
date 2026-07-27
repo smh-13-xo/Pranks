@@ -5,7 +5,7 @@ from collections import deque
 import streamlit as st
 import streamlit.components.v1 as components
 
-st.set_page_config(page_title="Intern Systems Qualification", page_icon="🧪", layout="wide")
+st.set_page_config(page_title="Engineering Systems Qualification", page_icon="🛠️", layout="wide")
 
 ROWS, COLS = 21, 31
 
