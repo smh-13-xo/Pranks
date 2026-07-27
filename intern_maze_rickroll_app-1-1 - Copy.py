@@ -87,15 +87,14 @@ st.markdown("""
     border-radius:14px;
     padding:18px;
 }
-..metric-label {
-    color:##607286 !important;
+.metric-label {
+    color:red !important;
     font-size:.75rem;
     text-transform:uppercase;
     letter-spacing:.08em;
 }
-
 .metric-value {
-    color:#102f4c !important;
+    color:lime !important;
     font-size:1.5rem;
     font-weight:800;
 }
@@ -110,7 +109,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown("""
-
 <div class="hero">
 <div class="kicker">BENCHMARK INTERNAL TRAINING PORTAL</div>
 <h1 style="margin:.2rem 0">Manufacturing Process Navigation Assessment</h1>
@@ -126,7 +124,7 @@ with right:
     st.markdown('<div class="panel">', unsafe_allow_html=True)
     st.markdown("""
 <div style="
-background:#174f78;
+background:#2f6ea5;
 padding:15px;
 border-radius:12px;
 margin-bottom:10px;
@@ -187,24 +185,24 @@ with left:
 
         c1, c2, c3 = st.columns([1,1,1])
         with c2:
-            up = st.button("⬆️ UP / W", use_container_width=True)
+            up = st.button("⬆️ UP / w", use_container_width=True)
         c1, c2, c3 = st.columns(3)
         with c1:
-            left_btn = st.button("⬅️ LEFT / A", use_container_width=True)
+            left_btn = st.button("⬅️ LEFT / a", use_container_width=True)
         with c2:
-            down = st.button("⬇️ DOWN / S", use_container_width=True)
+            down = st.button("⬇️ DOWN / s", use_container_width=True)
         with c3:
-            right_btn = st.button("➡️ RIGHT / D", use_container_width=True)
+            right_btn = st.button("➡️ RIGHT / d", use_container_width=True)
 
         if "kbd_nonce" not in st.session_state:
             st.session_state.kbd_nonce = 0
-        key_press = st.text_input("Keyboard command", placeholder="Type W, A, S, or D and press Enter", max_chars=1, label_visibility="collapsed", key=f"kbd_input_{st.session_state.kbd_nonce}").lower()
+        key_press = st.text_input("Keyboard command", placeholder="Type w, a, s, or d and press Enter", max_chars=1, label_visibility="collapsed", key=f"kbd_input_{st.session_state.kbd_nonce}").lower()
 
         drdc = None
-        if up or key_press == "W": drdc = (-1, 0)
-        elif down or key_press == "S": drdc = (1, 0)
-        elif left_btn or key_press == "A": drdc = (0, -1)
-        elif right_btn or key_press == "D": drdc = (0, 1)
+        if up or key_press == "w": drdc = (-1, 0)
+        elif down or key_press == "s": drdc = (1, 0)
+        elif left_btn or key_press == "a": drdc = (0, -1)
+        elif right_btn or key_press == "d": drdc = (0, 1)
 
         if drdc:
             nr, nc = player[0] + drdc[0], player[1] + drdc[1]
