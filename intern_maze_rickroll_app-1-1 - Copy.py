@@ -5,7 +5,7 @@ from collections import deque
 import streamlit as st
 import streamlit.components.v1 as components
 
-st.set_page_config(page_title="Intern Systems Qualification", page_icon="🧪", layout="wide")
+st.set_page_config(page_title="Engineering Systems Qualification", page_icon="🛠️", layout="wide")
 
 ROWS, COLS = 21, 31
 
@@ -90,7 +90,7 @@ st.markdown("""
 .player { color:#ffd166; text-shadow:0 0 8px #ffd166; }
 .goal { color:#66e3a4; text-shadow:0 0 8px #66e3a4; }
 .critter { color:#f8b4d9; }
-.alert { background:#fff8dd; border-left:5px solid #f1bd2b; padding:12px; border-radius:8px; }
+.alert {background:#e6e6e6; /* optional gray background */ border-left:5px solid #000000; color:#000000; }
 </style>
 """, unsafe_allow_html=True)
 
