@@ -86,7 +86,6 @@ st.markdown("""
     border:1px solid #42464d;
     border-radius:14px;
     padding:18px;
-    box-shadow:0 5px 14px rgba(0,0,0,.25);
 }
 ..metric-label {
     color:##607286 !important;
