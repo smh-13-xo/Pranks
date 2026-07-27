@@ -89,14 +89,14 @@ st.markdown("""
     box-shadow:0 5px 14px rgba(0,0,0,.25);
 }
 ..metric-label {
-    color:##607286;
+    color:##607286 !important;
     font-size:.75rem;
     text-transform:uppercase;
     letter-spacing:.08em;
 }
 
 .metric-value {
-    color:#102f4c;
+    color:#102f4c !important;
     font-size:1.5rem;
     font-weight:800;
 }
