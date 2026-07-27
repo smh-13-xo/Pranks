@@ -126,8 +126,8 @@ with left:
         st.success("Final approval terminal reached. Mandatory audiovisual training unlocked.")
         st.balloons()
         components.html("""
-        <div style="background:#081a2b;color:white;padding:24px;border-radius:14px;text-align:center;font-family:Arial">
-          <h1>✅ INTERN QUALIFICATION COMPLETE</h1>
+        <div style="background:#081a2b;color:gray;padding:24px;border-radius:14px;text-align:center;font-family:Arial">
+          <h1>✅ ENGINEERING QUALIFICATION COMPLETE</h1>
           <p>Your final required module is: <b>Never Gonna Give You Up — Process Commitment Training</b></p>
           <iframe width="760" height="428" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" title="Mandatory training" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
           <p style="opacity:.7">Failure to complete the full module may require maze requalification.</p>
@@ -175,10 +175,10 @@ with left:
         key_press = st.text_input("Keyboard command", placeholder="Type W, A, S, or D and press Enter", max_chars=1, label_visibility="collapsed", key=f"kbd_input_{st.session_state.kbd_nonce}").lower()
 
         drdc = None
-        if up or key_press == "w": drdc = (-1, 0)
-        elif down or key_press == "s": drdc = (1, 0)
-        elif left_btn or key_press == "a": drdc = (0, -1)
-        elif right_btn or key_press == "d": drdc = (0, 1)
+        if up or key_press == "W": drdc = (-1, 0)
+        elif down or key_press == "S": drdc = (1, 0)
+        elif left_btn or key_press == "A": drdc = (0, -1)
+        elif right_btn or key_press == "D": drdc = (0, 1)
 
         if drdc:
             nr, nc = player[0] + drdc[0], player[1] + drdc[1]
@@ -197,14 +197,14 @@ with left:
                     st.session_state.message = random.choice([
                         "Routing accepted. Continue through the approval matrix.",
                         "No nonconformance detected. Proceed.",
-                        "Path validated by imaginary process engineering.",
+                        "Path validated by imaginary engineering.",
                         "Documentation review remains unnecessarily complicated.",
                     ])
             else:
                 st.session_state.bump_count += 1
                 st.session_state.message = random.choice([
                     "PROCESS DEVIATION: You attempted to enter an undocumented work cell.",
-                    "Access denied. Submit form QF-404 and try another route.",
+                    "Access denied. Submit a TAF form and try another route.",
                     "Wall contact recorded. Quality has been copied on the email.",
                     "Invalid move. The cat auditor appears disappointed.",
                 ])
